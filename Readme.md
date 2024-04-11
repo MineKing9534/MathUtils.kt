@@ -37,3 +37,20 @@ dependencies {
     </dependency>
 </dependencies>
 ```
+
+# Usage
+This extension library simplifies handling `Node` operations. 
+
+```kotlin
+val a: Node = Constant.ONE
+val b: Node = Constant.TWO
+var c = Sum.create(a, b)
+```
+becomes
+```kotlin
+val a: Node = Constant.ONE
+val b: Node = Constant.TWO
+var c = a + b
+```
+
+The operators `-`, `*` and `/` will also work as expected
