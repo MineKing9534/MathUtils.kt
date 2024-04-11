@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "de.mineking"
-version = "1.0.0"
+version = "1.0.1"
 
 var commit = extractCommit()
 var release = System.getenv("RELEASE") == "true"
@@ -17,7 +17,7 @@ repositories {
 }
 
 dependencies {
-    implementation("de.mineking:MathUtils:1.0.0")
+    implementation("de.mineking:MathUtils:1.0.1")
 
     testImplementation(kotlin("test"))
 }
